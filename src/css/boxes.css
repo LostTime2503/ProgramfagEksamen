@@ -1,0 +1,89 @@
+/* Existing styles remain for larger screens */
+.new-section7 {
+  padding: 40px 20px;
+  background-color: #dde9d9;
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  min-height: 550px;
+}
+
+.section-header7 h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-content7 p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.box-grid7 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 250px;
+}
+
+.box7 {
+  width: 300px;
+  height: 380px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+.box-image27 {
+  max-width: 275px;
+  max-height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.box-header7 a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #8DC63F;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.box-header7 a:hover {
+  color: #7e7e7e;
+  text-decoration: underline;
+}
+
+.header-icon7 {
+  width: 25px; 
+  height: 25px;
+}
+
+.box-text7 {
+  font-size: 17px;
+  color: #333;
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 768px) {
+  .new-section7 {
+    /* Remove fixed height for mobile auto expansion */
+    height: 800px;
+    padding: 40px 10px;
+  }
+
+  .box-grid7 {
+    /* Stack boxes vertically */
+    flex-direction: column;
+    /* Remove fixed height to let the grid expand */
+    height: auto;
+  }
+
+  .box7 {
+    /* Make boxes almost full width on phone */
+    width: 90%;
+    height: auto; /* Remove fixed height if content height may vary */
+    margin: 0 auto; /* Center them horizontally */
+  }
+}

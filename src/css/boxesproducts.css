@@ -1,0 +1,60 @@
+/* Base Styles for BoxGrid */
+.box-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box2 {
+  width: 300px;
+  height: 170px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffff;
+}
+
+.box-image2 {
+  max-width: 275px;
+  max-height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.box-header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #8DC63F;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.box-header a:hover {
+  color: #7e7e7e; /* Changes the text color on hover */
+  text-decoration: underline;
+}
+
+.header-icon {
+  width: 25px; /* Adjust size as needed */
+  height: 25px; /* Adjust size as needed */
+}
+
+.box-text {
+  font-size: 17px;
+  color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .box-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box2 {
+    width: 90%;      /* Adjusts width relative to the viewport */
+    max-width: 300px;
+    margin: 0 auto;  /* Centers the box horizontally if necessary */
+  }
+}

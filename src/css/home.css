@@ -1,0 +1,76 @@
+/* Home.css */
+html, body {
+  overflow-y: auto; /* Ensures vertical scrolling is enabled */
+}
+
+
+/* Remove the background image from the body if not needed */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the home container fill the viewport */
+.home-container {
+  height: 100vh; /* Exactly one viewport height */
+  background-image: url('../assets/Bilder/BakgrunnVeiledning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  gap: 30px;
+}
+
+
+
+.vector-overlay {
+  position: absolute;
+  top: 0; /* or an appropriate value */
+  left: 0;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.SearchBar {
+  width: 50%;
+  max-width: 600px;
+}
+
+.second-section {
+  background-color: #DDE9D9;
+  text-align: center;
+  padding: 30px 0; /* Add some padding so content is not cramped */
+  height: 600px;
+  font-size: 24px;
+}
+
+
+.third-section {
+  background-color: #DDE9D9; /* Change as needed */
+  text-align: center;
+  padding: 10px 0;
+  height: auto; /* Adjust height as required */
+  font-size: 24px;
+  height: 450px;
+}
+
+.fourth-section {
+  background-color: #DDE9D9; /* Update this color as needed */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+

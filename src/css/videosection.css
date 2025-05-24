@@ -1,0 +1,56 @@
+.video-section {
+  padding: 40px 5%;
+  background-color: #DDE9D9; /* Background color for the section */
+  height: 550px;
+}
+
+.video-section-header {
+  text-align: center;
+  margin-bottom: 20px; /* Adds space between the header and the video content */
+}
+
+.video-section-header h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Updated container using gap and justify-content to reduce space between items */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;     /* Reduces the distance between video containers */
+  height: 500px;
+}
+
+/* Removed flex-basis so that the containers size only as large as their content */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video styling remains the same */
+.video {
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Force the text to wrap sooner by restricting the maximum width */
+.video-description {
+  text-align: center;
+  margin-top: 15px;
+  max-width: 300px; /* This ensures the text breaks into shorter lines */
+}
+
+.video-description h3 {
+  font-size: 24px;
+  margin: 10px 0 5px;
+}
+
+.video-description p {
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word; /* Ensures long words break if needed */
+}

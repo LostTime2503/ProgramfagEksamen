@@ -1,0 +1,163 @@
+/* Global box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Full-width wrapper for background */
+.carousel-wrapper {
+  width: 100%;
+  background-color: #dde9d9;
+  padding: 20px 0;
+  padding-top: 100px;
+}
+
+/* Header styling */
+.carousel-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel-header h2 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+.carousel-header p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ======================== */
+/*       Desktop Styles     */
+/* ======================== */
+
+/* Container that holds the carousel (desktop) */
+.unique-carousel-container {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Carousel row */
+.unique-carousel {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* Each slide (desktop view) */
+.unique-carousel__slide {
+  flex: 0 0 33.33%;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for inactive/active states */
+.unique-carousel__slide.inactive {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.unique-carousel__slide.active {
+  transform: scale(1);
+}
+
+/* Image styling */
+.unique-carousel__image-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  background: #eee;
+}
+
+.unique-carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Headline and paragraph */
+.unique-carousel__headline {
+  font-size: 28px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.unique-carousel__paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Navigation buttons */
+.unique-carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.unique-carousel__button--prev {
+  left: 10px;
+}
+
+.unique-carousel__button--next {
+  right: 10px;
+}
+
+/* ======================== */
+/*       Mobile Styles      */
+/* ======================== */
+@media (max-width: 768px) {
+  /* Container override for mobile (using the additional .mobile class) */
+  .unique-carousel-container.mobile {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Ensure the inner carousel remains a flex container */
+  .unique-carousel.mobile {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+
+  /* Mobile slide style – each slide will fill 80% of the container width */
+  .unique-carousel__slide.mobile {
+    flex: 0 0 80%;
+    width: 80%;
+    padding: 20px;
+  }
+
+  /* On mobile, we no longer want the scaling or opacity changes */
+  .unique-carousel__slide.inactive,
+  .unique-carousel__slide.active {
+    transform: none;
+    opacity: 1;
+  }
+
+  /* Optionally adjust navigation button sizes/positions if needed */
+  .unique-carousel__button {
+    padding: 10px;
+    font-size: 22px;
+  }
+}

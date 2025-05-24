@@ -1,0 +1,50 @@
+/* InformasjonSectionKampanje.css */
+.informasjon-section {
+  padding: 50px 20px;
+  background-color: #DDE9D9; /* Adjust the background color if needed */
+  margin-top: 30px;
+}
+
+.informasjon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.informasjon-image img {
+  width: 100%;
+  max-width: 500px; /* Controls the image size */
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.informasjon-text {
+  flex: 1;
+}
+
+.informasjon-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.informasjon-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .informasjon-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .informasjon-text {
+    margin: 0;
+  }
+}

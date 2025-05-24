@@ -1,0 +1,25 @@
+.sitat-section {
+  background-color: #ffff;
+  padding: 50px 20px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.sitat-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sitat-text {
+  font-size: 28px;
+  line-height: 1.4;
+  font-style: italic;
+  margin: 0;
+}
+
+.sitat-author {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}

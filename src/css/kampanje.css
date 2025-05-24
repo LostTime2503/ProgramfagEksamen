@@ -1,0 +1,92 @@
+.app-container {
+  background-image: url('../assets/Bilder/passordsikkerhetBakgrunn.png');
+  background-size: cover;
+  background-position: center; /* Default center for desktop */
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keeps content left-aligned on desktop */
+}
+
+.headline {
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.paragraph {
+  position: absolute;
+  top: 38%;
+  left: 12%;
+  max-width: 550px; /* Maximum width before wrapping */
+  word-wrap: break-word; /* Ensures long words break if needed */
+  white-space: normal; /* Allows text to wrap naturally */
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 768px) {
+  .button-container {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 90% !important;
+  }
+
+  .app-container {
+    background-position: left center;
+  }
+
+  /* Override absolute positioning and center content horizontally */
+  .headline,
+  .paragraph,
+  .button-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  
+  .headline {
+    /* Reduce top margin to bring the headline closer to the top */
+    margin-top: 100px;
+    margin-bottom: 10px;  /* Small space between headline and paragraph */
+    text-align: center;
+    font-size: 28px; /* Slightly smaller font for mobile */
+  }
+  
+  .paragraph {
+    margin-top: 5px; /* Bringing the paragraph closer to the headline */
+    font-size: 20px; /* Adjustment for legibility on mobile screens */
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+}

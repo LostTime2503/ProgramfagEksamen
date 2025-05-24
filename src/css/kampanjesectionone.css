@@ -1,0 +1,26 @@
+.new-section {
+  padding: 40px 20px;
+  background-color: #dde9d9;
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  height: 470px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 768px) {
+  .new-section {
+    height: auto;
+    padding: 40px 10px;
+  }
+}
