@@ -1,0 +1,79 @@
+/* This container covers the entire screen */
+.lagreapp-screen {
+  width: 100vw;
+  height: 950px;
+  display: flex;
+  flex-direction: column;   /* Ensure children stack vertically */
+  justify-content: flex-start;  /* Start at the top */
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 80px;  /* Adds space at the top, pushing the phone container down */
+}
+
+
+.phone-container {
+  width: 360px;
+  height: 770px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #DDE9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 80px; /* This pushes the container down */
+}
+
+/* Existing styles for inner elements remain the same */
+.user-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-picture {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.password-display {
+  margin: 20px 0;
+  width: 80%;
+}
+
+.password-display input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.keypad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keypad-row {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.keypad-row button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 90px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.keypad-row button:hover {
+  background-color: #8DC63F;
+}
+

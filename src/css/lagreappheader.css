@@ -1,0 +1,72 @@
+/* Phone header container styling */
+.phone-header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Relative position so it's contained in the phone container */
+  z-index: 1;
+}
+
+/* Logo styling */
+.phone-logo img {
+  height: 40px;
+}
+
+/* Hamburger icon styling */
+.phone-hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+}
+
+.phone-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+/* Side menu styling */
+.phone-side-menu {
+  position: absolute;
+  top: 100%;  /* Immediately below the header */
+  right: 0;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.phone-side-menu.open {
+  transform: translateX(0);
+}
+
+.phone-side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phone-side-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Optional overlay styling if you want a background shade when the menu is open */
+.phone-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}

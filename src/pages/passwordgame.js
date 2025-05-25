@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../css/passwordgame.css";
-import Header from "../components/Header";
 import iconImage from "../assets/Symboler/ArrowLeftBlack.png";
 
 const Home = () => {
@@ -138,7 +137,6 @@ const Home = () => {
 
   return (
     <div className="page-container">
-      <Header />
       <div className="main-content">
         {/* Dynamisk overskrift plassert over inputfeltet */}
         <div className="content-header">

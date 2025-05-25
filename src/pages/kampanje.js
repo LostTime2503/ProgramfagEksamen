@@ -9,11 +9,8 @@ import TipsSection from '../sections/TipsSection.js';
 import FourthSectionHome from '../sections/FourthSectionHome.js';  // Import the new section
 import '../css/kampanje.css';
 
-const App = () => {
-  const handleButtonClick = () => {
-    console.log('Button clicked!');
-  };
-
+// Kampanje.js
+const Kampanje = () => {
   return (
     <>
       <div className="app-container">
@@ -26,22 +23,32 @@ const App = () => {
             kan du lære deg om hvordan du kan være trygg og ha nettvett.
           </p>
         </div>
-        <div
-          className="button-container"
-          style={{ position: 'absolute', top: '60%', left: '25%' }}
-        >
-          <Button label="Knapp" onClick={handleButtonClick} />
+        <div className="button-container" style={{ position: 'absolute', top: '60%', left: '25%' }}>
+          <Button label="Knapp" onClick={() => console.log('Button clicked!')} />
         </div>
       </div>
-      {/* Section ordering */}
-      <SitatSection />
-      <InformasjonSectionKampanje />
-      <Section />
-      <Section2 />
-      <TipsSection />
-      <FourthSectionHome /> {/* New section appears under the Video section */}
+      
+      {/* Add IDs to your campaign sections */}
+      <section id="section1">
+        <SitatSection />
+      </section>
+      <section id="section2">
+        <InformasjonSectionKampanje />
+      </section>
+      <section id="section3">
+        <Section />
+      </section>
+      <section id="section4">
+        <Section2 />
+      </section>
+      <section id="section5">
+        <TipsSection />
+      </section>
+      <section id="section6">
+        <FourthSectionHome />
+      </section>
     </>
   );
 };
 
-export default App;
+export default Kampanje;

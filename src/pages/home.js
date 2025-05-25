@@ -3,7 +3,6 @@ import ChatbaseLoader from "../components/AiBot.js";
 import SearchBar from "../components/searchbar.js";
 import Button from "../components/button.js";
 import "../css/home.css";
-import Header from "../components/Header.js";
 import NewSection from "../sections/SecondSectionHome.js";
 import ThirdSection from "../sections/ThirdSectionHome.js";
 import FourthSection from "../sections/FourthSectionHome.js";
@@ -12,7 +11,6 @@ const Home = () => {
   return (
     <>
       <ChatbaseLoader />
-      <Header />
       <section className="home-container">
         <SearchBar />
         <div className="button-container">

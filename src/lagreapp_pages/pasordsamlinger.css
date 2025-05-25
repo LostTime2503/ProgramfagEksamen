@@ -1,0 +1,9 @@
+/* Styles specific to the header within the phone container */
+.phone-header {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  /* Optionally, add styles such as font properties as needed */
+}

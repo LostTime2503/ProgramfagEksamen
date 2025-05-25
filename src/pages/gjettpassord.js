@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Header from "../components/Header";
 import "../css/gjettpassord.css";
 
 const PersonalAndParentsInfoGame = () => {
@@ -224,7 +223,6 @@ const PersonalAndParentsInfoGame = () => {
 
   return (
     <div className="game-container">
-      <Header />
       <div className="game-content">
         {/* Step 1: Personal Information */}
         {step === 1 && (

@@ -1,13 +1,11 @@
-/* Header.css */
-
 /* Header container styling */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #ffffff;           /* Solid white background */
-  position: fixed;                  /* Fixed so it doesn't push page content */
+  background-color: #ffffff;  /* Solid white background */
+  position: fixed;            /* Fixed so it doesn't push page content */
   top: 0;
   left: 0;
   right: 0;
@@ -19,6 +17,40 @@
   height: 40px;
 }
 
+/* Existing CSS ... */
+
+/* Absolutely positioned campaign navigation - centers itself regardless of other content */
+.campaign-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Style for the buttons - customize as needed */
+.campaign-nav button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.campaign-nav button:hover {
+  color: #000;
+}
+
+/* Media query to hide the campaign navigation on mobile devices */
+@media only screen and (max-width: 768px) {
+  .campaign-nav {
+    display: none;
+  }
+}
+
+
 /* Hamburger icon styling */
 .hamburger {
   cursor: pointer;
@@ -29,7 +61,7 @@
   justify-content: space-between;
 }
 
-/* Make hamburger bars white */
+/* Hamburger bars styling */
 .hamburger .bar {
   height: 3px;
   width: 100%;
